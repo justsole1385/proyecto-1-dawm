@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Atempo - Cultiva tu enfoque</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Atempo - Cultiva tu enfoque</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Geist:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -98,272 +106,362 @@
             }
         }
     </script>
-<style>
+    <style>
         body {
-            background-color: #13131a; /* Enforcing background from config to match prompt intent */
+            background-color: #13131a;
+            /* Enforcing background from config to match prompt intent */
             color: #e4e1ec;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
+
         /* Custom lo-fi utilities */
         .lofi-glow {
-            box-shadow: 0 0 20px rgba(155, 149, 208, 0.15); /* Soft primary-container glow */
+            box-shadow: 0 0 20px rgba(155, 149, 208, 0.15);
+            /* Soft primary-container glow */
         }
+
         .lofi-border {
-            border: 1px solid #3D3A58; /* Muted violet border based on guidance */
+            border: 1px solid #3D3A58;
+            /* Muted violet border based on guidance */
         }
     </style>
 </head>
+
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface/80 backdrop-blur-md dark:bg-surface/80 fixed top-0 w-full z-50 border-b border-outline-variant/20 transition-opacity duration-300 active:opacity-70">
-<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-20">
-<div class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface/80 backdrop-blur-md dark:bg-surface/80 fixed top-0 w-full z-50 border-b border-outline-variant/20 transition-opacity duration-300 active:opacity-70">
+        <div
+            class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <div class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">
                 Atempo
             </div>
-<!-- Desktop Nav -->
-<div class="hidden md:flex gap-6 items-center">
-<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#hero">Hero</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#descripcion">Descripción</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#beneficios">Beneficios</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#como-funciona">Cómo funciona</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#planes">Planes</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#testimonios">Testimonios</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contacto">Contacto</a>
-</div>
-<!-- CTA Desktop -->
-<button class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow">
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex gap-6 items-center">
+                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300"
+                    href="#hero">Hero</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#descripcion">Descripción</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#beneficios">Beneficios</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#como-funciona">Cómo funciona</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#planes">Planes</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#testimonios">Testimonios</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#contacto">Contacto</a>
+            </div>
+            <!-- CTA Desktop -->
+            <button
+                class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow">
                 Comenzar
             </button>
-<!-- Mobile Menu Icon (Simplified) -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;">menu</span>
-</button>
-</div>
-</nav>
-<main class="flex-grow pt-20"> <!-- Offset for fixed nav -->
-<!-- 1. Hero Section -->
-<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden" id="hero">
-<!-- Background Image Placeholder -->
-<div class="absolute inset-0 z-0 opacity-40">
-<img alt="Abstract mindful visual" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvhtZgkaDybBERK89cHI38yKCQ4ArHwmjsIzohAkCEEZCCzLKtC87C6bYIB4sh6JZ0Iw5P0N4u4ZM3zJEzX6A1V6OTExxN1yzn4uPrfnOtU7yu9pZ8hKrmwlSTf8rkInibLHCM3HQrpkRN5j_Npas0vxsNs_pof_Sx5oRvbqoVB--aqyvw-okjhRbPeyFsRI0PyZAcnb311dNFDLxxn5fwJnO0-RftPzVUbO4iMPbKssZLZ8azK3wcn-6i-b3HolKbzQi_7JaxFcg"/>
-</div>
-<div class="relative z-10 text-center max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col items-center">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high/50 border border-secondary/30 mb-8 backdrop-blur-sm">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="font-caption text-caption text-secondary">Encuentra tu ritmo</span>
-</div>
-<h1 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-6">Atempo</h1>
-<p class="font-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Cultiva tu enfoque con intención y calma.</p>
-<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow flex items-center gap-2">
-                    Empieza tu sesión
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">arrow_right_alt</span>
-</button>
-</div>
-</section>
-<!-- 2. Descripción Section -->
-<section class="py-section-gap" id="descripcion">
-<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid md:grid-cols-2 gap-gutter items-center">
-<div class="space-y-6">
-<h2 class="font-headline-md text-on-surface">Un espacio para la mente</h2>
-<p class="font-body-md text-on-surface-variant">
-                            Atempo no es una herramienta más de productividad. Es un refugio diseñado para estudiantes universitarios que buscan un enfoque profundo sin la presión frenética de la cultura del "hustle". 
+            <!-- Mobile Menu Icon (Simplified) -->
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined"
+                    style="font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="flex-grow pt-20"> <!-- Offset for fixed nav -->
+        <!-- 1. Hero Section -->
+        <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden" id="hero">
+            <!-- Background Image Placeholder -->
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img alt="Abstract mindful visual" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvhtZgkaDybBERK89cHI38yKCQ4ArHwmjsIzohAkCEEZCCzLKtC87C6bYIB4sh6JZ0Iw5P0N4u4ZM3zJEzX6A1V6OTExxN1yzn4uPrfnOtU7yu9pZ8hKrmwlSTf8rkInibLHCM3HQrpkRN5j_Npas0vxsNs_pof_Sx5oRvbqoVB--aqyvw-okjhRbPeyFsRI0PyZAcnb311dNFDLxxn5fwJnO0-RftPzVUbO4iMPbKssZLZ8azK3wcn-6i-b3HolKbzQi_7JaxFcg" />
+            </div>
+            <div
+                class="relative z-10 text-center max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col items-center">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high/50 border border-secondary/30 mb-8 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="font-caption text-caption text-secondary">Encuentra tu ritmo</span>
+                </div>
+                <h1 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-6">Atempo</h1>
+                <p class="font-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Cultiva tu enfoque con intención
+                    y calma.</p>
+                <button
+                    class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow flex items-center gap-2">
+                    Descubre más
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'wght' 200;">arrow_right_alt</span>
+                </button>
+            </div>
+        </section>
+        <!-- 2. Descripción Section -->
+        <section class="py-section-gap" id="descripcion">
+            <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid md:grid-cols-2 gap-gutter items-center">
+                    <div class="space-y-6">
+                        <h2 class="font-headline-md text-on-surface">Un espacio para la mente</h2>
+                        <p class="font-body-md text-on-surface-variant">
+                            Atempo no es una herramienta más de productividad. Es un refugio diseñado para estudiantes
+                            universitarios que buscan un enfoque profundo sin la presión frenética de la cultura del
+                            "hustle".
                         </p>
-<p class="font-body-md text-on-surface-variant">
-                            Fomentamos la gentileza contigo mismo y la creación de hábitos de estudio sostenibles a largo plazo, utilizando un entorno visualmente tranquilo y libre de distracciones agresivas.
+                        <p class="font-body-md text-on-surface-variant">
+                            Fomentamos la gentileza contigo mismo y la creación de hábitos de estudio sostenibles a
+                            largo plazo, utilizando un entorno visualmente tranquilo y libre de distracciones agresivas.
                         </p>
-</div>
-<div class="relative rounded-2xl overflow-hidden bg-surface-container lofi-border aspect-square md:aspect-auto md:h-[400px] flex items-center justify-center">
-<img alt="Soft product illustration" class="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxwcEiXbn6kZ4SlX7Pz7I_d0-seGr7ZfWyk5MoGH8ls2lI_sXeqNsAh3b2HMgvaXTwp29xK0tWtvAx9VML-4jxDW8AfylHmfLPgPFaeIhmbpnoIaBNNIIDzwtU03qvD0CCD2Ewroh1qNkJy5EytxbF73b_0bcGbY3rX6r14aDJQv9CIT12sThPWtuC1c1V79nIkDckCGz5oFt0kc6PUIgsy5jfzZALPJD7NFykI2d9Y7k9hUOwPnz86F-2UyowoElBgvhKIP1DiZI"/>
-</div>
-</div>
-</div>
-</section>
-<!-- 3. Beneficios Section (Bento-ish feel) -->
-<section class="py-section-gap bg-surface-container-low" id="beneficios">
-<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-12">
-<h2 class="font-headline-md text-on-surface">Beneficios</h2>
-</div>
-<div class="grid md:grid-cols-3 gap-gutter">
-<!-- Card 1 -->
-<div class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
-<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'wght' 200;">psychology_alt</span>
-</div>
-<h3 class="font-label-md text-on-surface mb-3 text-lg">Recupera el placer de estudiar</h3>
-<p class="font-body-md text-on-surface-variant text-sm mt-auto">Libérate de la ansiedad por el rendimiento y reconecta con el proceso de aprendizaje.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
-<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'wght' 200;">eco</span>
-</div>
-<h3 class="font-label-md text-on-surface mb-3 text-lg">Crea hábitos sostenibles</h3>
-<p class="font-body-md text-on-surface-variant text-sm mt-auto">Ritmos de trabajo que respetan tu energía y previenen el agotamiento mental.</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
-<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'wght' 200;">weekend</span>
-</div>
-<h3 class="font-label-md text-on-surface mb-3 text-lg">Un espacio que te apoya</h3>
-<p class="font-body-md text-on-surface-variant text-sm mt-auto">Diseño calmado, minimalista e intencional para reducir la fatiga visual y cognitiva.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- 4. Cómo funciona Section -->
-<section class="py-section-gap" id="como-funciona">
-<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-16">
-<h2 class="font-headline-md text-on-surface">Cómo funciona</h2>
-</div>
-<div class="flex flex-col md:flex-row gap-8 justify-center relative">
-<!-- Connecting line desktop -->
-<div class="hidden md:block absolute top-6 left-1/6 right-1/6 h-px bg-outline-variant/30 -z-10"></div>
-<!-- Step 1 -->
-<div class="flex-1 flex flex-col items-center text-center">
-<div class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">1</div>
-<h4 class="font-label-md text-on-surface mb-2">Elige tu ambiente</h4>
-<p class="font-caption text-on-surface-variant max-w-[200px]">Selecciona la atmósfera sonora y visual que mejor se adapte a tu estado de ánimo.</p>
-</div>
-<!-- Step 2 -->
-<div class="flex-1 flex flex-col items-center text-center">
-<div class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">2</div>
-<h4 class="font-label-md text-on-surface mb-2">Activa el temporizador</h4>
-<p class="font-caption text-on-surface-variant max-w-[200px]">Inicia un bloque de enfoque suave, sin alarmas estridentes ni urgencia.</p>
-</div>
-<!-- Step 3 -->
-<div class="flex-1 flex flex-col items-center text-center">
-<div class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">3</div>
-<h4 class="font-label-md text-on-surface mb-2">Registra tu sesión</h4>
-<p class="font-caption text-on-surface-variant max-w-[200px]">Anota brevemente tus sensaciones para fomentar la consciencia sobre tu proceso.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- 5. Planes Section -->
-<section class="py-section-gap bg-surface-container-low" id="planes">
-<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-12">
-<h2 class="font-headline-md text-on-surface">Planes</h2>
-</div>
-<div class="bg-surface rounded-xl lofi-border overflow-hidden">
-<table class="w-full text-left border-collapse">
-<thead>
-<tr class="border-b border-outline-variant/30">
-<th class="p-6 font-label-md text-on-surface-variant w-1/2">Característica</th>
-<th class="p-6 font-label-md text-center text-on-surface w-1/4">Sin cuenta</th>
-<th class="p-6 font-label-md text-center text-primary w-1/4">Con cuenta</th>
-</tr>
-</thead>
-<tbody class="font-body-md text-sm">
-<tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
-<td class="p-4 pl-6 text-on-surface">Temporizador básico</td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-secondary" style="font-size: 20px;">check</span></td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-primary" style="font-size: 20px;">check</span></td>
-</tr>
-<tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
-<td class="p-4 pl-6 text-on-surface">Ambientes sonoros lo-fi</td>
-<td class="p-4 text-center text-on-surface-variant text-xs">Limitados</td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-primary" style="font-size: 20px;">check</span></td>
-</tr>
-<tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
-<td class="p-4 pl-6 text-on-surface">Historial de sesiones</td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-outline" style="font-size: 20px;">close</span></td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-primary" style="font-size: 20px;">check</span></td>
-</tr>
-<tr class="hover:bg-surface-bright/20 transition-colors">
-<td class="p-4 pl-6 text-on-surface">Estadísticas de bienestar</td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-outline" style="font-size: 20px;">close</span></td>
-<td class="p-4 text-center"><span class="material-symbols-outlined text-primary" style="font-size: 20px;">check</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<!-- 6. Testimonios Section -->
-<section class="py-section-gap" id="testimonios">
-<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-12">
-<h2 class="font-headline-md text-on-surface">Voces</h2>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<!-- Testimonial 1 -->
-<div class="bg-surface rounded-xl p-6 lofi-border relative">
-<span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20" style="font-size: 40px;">format_quote</span>
-<p class="font-body-md text-on-surface-variant mb-6 relative z-10">"Estudiar medicina me tenía agotada. Atempo me ayudó a entender que puedo ser productiva sin sentirme ansiosa todo el tiempo."</p>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">C</div>
-<span class="font-label-md text-on-surface">Clara</span>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="bg-surface rounded-xl p-6 lofi-border relative">
-<span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20" style="font-size: 40px;">format_quote</span>
-<p class="font-body-md text-on-surface-variant mb-6 relative z-10">"El diseño es tan limpio que genuinamente me relaja abrir la app. Se ha convertido en mi ritual antes de escribir ensayos."</p>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">M</div>
-<span class="font-label-md text-on-surface">Mateo</span>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="bg-surface rounded-xl p-6 lofi-border relative">
-<span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20" style="font-size: 40px;">format_quote</span>
-<p class="font-body-md text-on-surface-variant mb-6 relative z-10">"Por fin una app que no me grita notificaciones ni me castiga si decido pausar. Es exactamente lo que necesitaba."</p>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">S</div>
-<span class="font-label-md text-on-surface">Sofía</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 7. Contacto Section -->
-<section class="py-section-gap bg-surface-container-low" id="contacto">
-<div class="max-w-md mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-10">
-<h2 class="font-headline-md text-on-surface mb-2">Contacto</h2>
-<p class="font-body-md text-on-surface-variant">¿Tienes sugerencias o necesitas ayuda? Escríbenos.</p>
-</div>
-<form class="space-y-4 bg-surface p-8 rounded-xl lofi-border">
-<div>
-<label class="block font-caption text-on-surface-variant mb-1" for="name">Nombre</label>
-<input class="w-full bg-background border-b border-outline-variant px-0 py-2 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all rounded-none" id="name" placeholder="Tu nombre" type="text"/>
-</div>
-<div>
-<label class="block font-caption text-on-surface-variant mb-1" for="email">Email</label>
-<input class="w-full bg-background border-b border-outline-variant px-0 py-2 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all rounded-none" id="email" placeholder="tu@email.com" type="email"/>
-</div>
-<div>
-<label class="block font-caption text-on-surface-variant mb-1" for="message">Mensaje</label>
-<textarea class="w-full bg-background border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all mt-1" id="message" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary-container text-on-primary-container py-3 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow mt-6" type="submit">
+                    </div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden bg-surface-container lofi-border aspect-square md:aspect-auto md:h-[400px] flex items-center justify-center">
+                        <img alt="Soft product illustration"
+                            class="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxwcEiXbn6kZ4SlX7Pz7I_d0-seGr7ZfWyk5MoGH8ls2lI_sXeqNsAh3b2HMgvaXTwp29xK0tWtvAx9VML-4jxDW8AfylHmfLPgPFaeIhmbpnoIaBNNIIDzwtU03qvD0CCD2Ewroh1qNkJy5EytxbF73b_0bcGbY3rX6r14aDJQv9CIT12sThPWtuC1c1V79nIkDckCGz5oFt0kc6PUIgsy5jfzZALPJD7NFykI2d9Y7k9hUOwPnz86F-2UyowoElBgvhKIP1DiZI" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3. Beneficios Section (Bento-ish feel) -->
+        <section class="py-section-gap bg-surface-container-low" id="beneficios">
+            <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline-md text-on-surface">Beneficios</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-gutter">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'wght' 200;">psychology_alt</span>
+                        </div>
+                        <h3 class="font-label-md text-on-surface mb-3 text-lg">Recupera el placer de estudiar</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm mt-auto">Libérate de la ansiedad por el
+                            rendimiento y reconecta con el proceso de aprendizaje.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'wght' 200;">eco</span>
+                        </div>
+                        <h3 class="font-label-md text-on-surface mb-3 text-lg">Crea hábitos sostenibles</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm mt-auto">Ritmos de trabajo que respetan
+                            tu energía y previenen el agotamiento mental.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-surface rounded-xl p-8 lofi-border hover:lofi-glow transition-all duration-500 group flex flex-col items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'wght' 200;">weekend</span>
+                        </div>
+                        <h3 class="font-label-md text-on-surface mb-3 text-lg">Un espacio que te apoya</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm mt-auto">Diseño calmado, minimalista e
+                            intencional para reducir la fatiga visual y cognitiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4. Cómo funciona Section -->
+        <section class="py-section-gap" id="como-funciona">
+            <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-md text-on-surface">Cómo funciona</h2>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 justify-center relative">
+                    <!-- Connecting line desktop -->
+                    <div class="hidden md:block absolute top-6 left-1/6 right-1/6 h-px bg-outline-variant/30 -z-10">
+                    </div>
+                    <!-- Step 1 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">
+                            1</div>
+                        <h4 class="font-label-md text-on-surface mb-2">Elige tu ambiente</h4>
+                        <p class="font-caption text-on-surface-variant max-w-[200px]">Selecciona la atmósfera sonora y
+                            visual que mejor se adapte a tu estado de ánimo.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">
+                            2</div>
+                        <h4 class="font-label-md text-on-surface mb-2">Activa el temporizador</h4>
+                        <p class="font-caption text-on-surface-variant max-w-[200px]">Inicia un bloque de enfoque suave,
+                            sin alarmas estridentes ni urgencia.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface lofi-border flex items-center justify-center font-label-md text-primary mb-4">
+                            3</div>
+                        <h4 class="font-label-md text-on-surface mb-2">Registra tu sesión</h4>
+                        <p class="font-caption text-on-surface-variant max-w-[200px]">Anota brevemente tus sensaciones
+                            para fomentar la consciencia sobre tu proceso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5. Planes Section -->
+        <section class="py-section-gap bg-surface-container-low" id="planes">
+            <div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline-md text-on-surface">Planes</h2>
+                </div>
+                <div class="bg-surface rounded-xl lofi-border overflow-hidden">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-outline-variant/30">
+                                <th class="p-6 font-label-md text-on-surface-variant w-1/2">Característica</th>
+                                <th class="p-6 font-label-md text-center text-on-surface w-1/4">Sin cuenta</th>
+                                <th class="p-6 font-label-md text-center text-primary w-1/4">Con cuenta</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-body-md text-sm">
+                            <tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
+                                <td class="p-4 pl-6 text-on-surface">Temporizador básico</td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-secondary"
+                                        style="font-size: 20px;">check</span></td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-primary"
+                                        style="font-size: 20px;">check</span></td>
+                            </tr>
+                            <tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
+                                <td class="p-4 pl-6 text-on-surface">Ambientes sonoros lo-fi</td>
+                                <td class="p-4 text-center text-on-surface-variant text-xs">Limitados</td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-primary"
+                                        style="font-size: 20px;">check</span></td>
+                            </tr>
+                            <tr class="border-b border-outline-variant/10 hover:bg-surface-bright/20 transition-colors">
+                                <td class="p-4 pl-6 text-on-surface">Historial de sesiones</td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-outline"
+                                        style="font-size: 20px;">close</span></td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-primary"
+                                        style="font-size: 20px;">check</span></td>
+                            </tr>
+                            <tr class="hover:bg-surface-bright/20 transition-colors">
+                                <td class="p-4 pl-6 text-on-surface">Estadísticas de bienestar</td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-outline"
+                                        style="font-size: 20px;">close</span></td>
+                                <td class="p-4 text-center"><span class="material-symbols-outlined text-primary"
+                                        style="font-size: 20px;">check</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- 6. Testimonios Section -->
+        <section class="py-section-gap" id="testimonios">
+            <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline-md text-on-surface">Voces</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-surface rounded-xl p-6 lofi-border relative">
+                        <span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20"
+                            style="font-size: 40px;">format_quote</span>
+                        <p class="font-body-md text-on-surface-variant mb-6 relative z-10">"Estudiar medicina me tenía
+                            agotada. Atempo me ayudó a entender que puedo ser productiva sin sentirme ansiosa todo el
+                            tiempo."</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">
+                                C</div>
+                            <span class="font-label-md text-on-surface">Clara</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-surface rounded-xl p-6 lofi-border relative">
+                        <span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20"
+                            style="font-size: 40px;">format_quote</span>
+                        <p class="font-body-md text-on-surface-variant mb-6 relative z-10">"El diseño es tan limpio que
+                            genuinamente me relaja abrir la app. Se ha convertido en mi ritual antes de escribir
+                            ensayos."</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">
+                                M</div>
+                            <span class="font-label-md text-on-surface">Mateo</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-surface rounded-xl p-6 lofi-border relative">
+                        <span class="material-symbols-outlined absolute top-6 right-6 text-outline-variant/20"
+                            style="font-size: 40px;">format_quote</span>
+                        <p class="font-body-md text-on-surface-variant mb-6 relative z-10">"Por fin una app que no me
+                            grita notificaciones ni me castiga si decido pausar. Es exactamente lo que necesitaba."</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-label-md text-primary">
+                                S</div>
+                            <span class="font-label-md text-on-surface">Sofía</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 7. Contacto Section -->
+        <section class="py-section-gap bg-surface-container-low" id="contacto">
+            <div class="max-w-md mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-10">
+                    <h2 class="font-headline-md text-on-surface mb-2">Contacto</h2>
+                    <p class="font-body-md text-on-surface-variant">¿Tienes sugerencias o necesitas ayuda? Escríbenos.
+                    </p>
+                </div>
+                <form class="space-y-4 bg-surface p-8 rounded-xl lofi-border">
+                    <div>
+                        <label class="block font-caption text-on-surface-variant mb-1" for="name">Nombre</label>
+                        <input
+                            class="w-full bg-background border-b border-outline-variant px-0 py-2 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all rounded-none"
+                            id="name" placeholder="Tu nombre" type="text" />
+                    </div>
+                    <div>
+                        <label class="block font-caption text-on-surface-variant mb-1" for="email">Email</label>
+                        <input
+                            class="w-full bg-background border-b border-outline-variant px-0 py-2 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all rounded-none"
+                            id="email" placeholder="tu@email.com" type="email" />
+                    </div>
+                    <div>
+                        <label class="block font-caption text-on-surface-variant mb-1" for="message">Mensaje</label>
+                        <textarea
+                            class="w-full bg-background border border-outline-variant rounded-lg p-3 text-on-surface focus:ring-0 focus:border-primary focus:lofi-glow transition-all mt-1"
+                            id="message" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-primary-container text-on-primary-container py-3 rounded-lg font-label-md hover:bg-primary-container/90 transition-all duration-300 lofi-glow mt-6"
+                        type="submit">
                         Enviar
                     </button>
-</form>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-surface-container w-full transition-all duration-300">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap gap-gutter">
-<div class="font-headline-md text-headline-md font-semibold text-primary mb-4 md:mb-0">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-surface-container w-full transition-all duration-300">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap gap-gutter">
+            <div class="font-headline-md text-headline-md font-semibold text-primary mb-4 md:mb-0">
                 Atempo
             </div>
-<div class="font-caption text-caption text-on-surface-variant dark:text-on-surface-variant text-center md:text-left">
+            <div
+                class="font-caption text-caption text-on-surface-variant dark:text-on-surface-variant text-center md:text-left">
                 © 2026 Atempo. Cultiva tu enfoque con intención.
             </div>
-<div class="flex gap-6 mt-4 md:mt-0">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Instagram</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Twitter</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Spotify</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300 hidden" href="#">LinkedIn</a> <!-- Hidden as per prompt strictness to only show specific ones, but keeping data intact -->
-</div>
-</div>
-</footer>
-</body></html>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300"
+                    href="#">Instagram</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300"
+                    href="#">Twitter</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300"
+                    href="#">Spotify</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300 hidden"
+                    href="#">LinkedIn</a>
+                <!-- Hidden as per prompt strictness to only show specific ones, but keeping data intact -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
